@@ -1,0 +1,39 @@
+@import '../util/Color.scss';
+
+.navbar {
+	background-color: $bg;
+	padding: 1rem;
+	align-items: center;
+	&__logo {
+		position: relative;
+		color: #000;
+		font-size: 3rem;
+		&-img {
+			position: absolute;
+			top: -3rem;
+			left: -2.1rem;
+			transform: rotate(-15.62deg);
+			filter: brightness(4);
+			@media screen and (max-width: 500px) {
+				display: none;
+			}
+		}
+	}
+
+	&__elements {
+		display: flex;
+		list-style-type: none;
+		margin-bottom: 0;
+		font-size: 1.8rem;
+		position: relative;
+		&-elem a {
+			margin: 1rem;
+			text-decoration: none;
+			color: #212121;
+		}
+		&-elem a:hover {
+			color: $blue;
+		}
+		
+	}
+}
